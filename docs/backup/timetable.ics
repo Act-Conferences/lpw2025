@@ -1,0 +1,978 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:-//Act//Data::ICal 0.22//EN
+X-WR-CALNAME:London Perl & Raku Workshop 2024
+X-WR-TIMEZONE:Europe/London
+BEGIN:VTIMEZONE
+TZID:Europe/London
+X-LIC-LOCATION:Europe/London
+BEGIN:DAYLIGHT
+DTSTART:19700329T010000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZNAME:BST
+TZOFFSETFROM:+0000
+TZOFFSETTO:+0100
+END:DAYLIGHT
+BEGIN:STANDARD
+DTSTART:19701025T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZNAME:GMT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Dave Cross
+ATTENDEE:Andrew Solomon
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Richard Pillar
+ATTENDEE:Leon Brocard
+COMMENT:8 attendees
+DESCRIPTION:Perl Diver is a system for taking various measurements about th
+ e quality of your Perl code and producing reports from that data. This hap
+ pens automatically\, using GitHub Actions and GitHub Pages.\n\nDepending o
+ n how the next six months go\,  this will either be a vaguely handwavey ta
+ lk about concepts and plans - or it will be a bit of a sales pitch with lo
+ ts of demos.
+DTEND;TZID=Europe/London:20241026T101000
+DTSTART;TZID=Europe/London:20241026T093000
+LOCATION:The Library
+ORGANIZER:Dave Cross
+SUMMARY:Perl Diver
+UID:http://act.yapc.eu/lpw2024/backup/talk/7889
+URL:http://act.yapc.eu/lpw2024/backup/talk/7889
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:Jay Vogt
+ATTENDEE:Chris Carline
+ATTENDEE:Robert Rothenberg
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Michael Woods
+ATTENDEE:Richard Pillar
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:Boyd Duffee
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:15 attendees
+DESCRIPTION:This talk will introduce the recently released Perl implementat
+ ion of the OpenTelemetry API and SDK.\n\nThere will be a brief overview of
+  what OpenTelemetry is and the challenges of starting a new Perl implement
+ ation from scratch. We will cover some of its most prominent features\, it
+ s immediate challenges\, how it is currently being used\, and how it can h
+ elp authors of both CPAN libraries and stand-alone applications to get bet
+ ter insight into their works ... today!
+DTEND;TZID=Europe/London:20241026T120000
+DTSTART;TZID=Europe/London:20241026T114000
+LOCATION:The Library
+ORGANIZER:José Joaquín Atria
+SUMMARY:Using OpenTelemetry in your Perl libraries and applications
+UID:http://act.yapc.eu/lpw2024/backup/talk/7895
+URL:http://act.yapc.eu/lpw2024/backup/talk/7895
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Mohammad Anwar
+ATTENDEE:Leon Timmermans
+ATTENDEE:Tom Hukins
+ATTENDEE:Ian Brierley
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Boyd Duffee
+ATTENDEE:Michael Woods
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:sujin seo
+ATTENDEE:Leon Brocard
+ATTENDEE:Thibault Duponchelle
+COMMENT:18 attendees
+DESCRIPTION:Almost everybody seems to think XS is difficult. I think they'r
+ e wrong\, I just think it's usually really poorly explained.\n\nI'll show 
+ you how.
+DTEND;TZID=Europe/London:20241026T134000
+DTSTART;TZID=Europe/London:20241026T130000
+LOCATION:The Library
+ORGANIZER:Leon Timmermans
+SUMMARY:A modern introduction to XS
+UID:http://act.yapc.eu/lpw2024/backup/talk/7899
+URL:http://act.yapc.eu/lpw2024/backup/talk/7899
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Andrew Mehta
+ATTENDEE:Dave Cross
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Habere Et Dispertire
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Michael Woods
+ATTENDEE:Richard Pillar
+ATTENDEE:John McCarthy
+ATTENDEE:Joel Vivian
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:18 attendees
+DESCRIPTION:In the talk\, I would like to talk about the core enhancements 
+ in the latest release Perl v5.40. I am going to present the enhancements w
+ ith easy to follow example giving background and history of each. I may no
+ t cover every enhancements but likely to take up at least 5-6 most promine
+ nt enhancements.
+DTEND;TZID=Europe/London:20241026T141000
+DTSTART;TZID=Europe/London:20241026T135000
+LOCATION:The Ballroom
+ORGANIZER:Mohammad Anwar
+SUMMARY:What's new in Perl v5.40?
+UID:http://act.yapc.eu/lpw2024/backup/talk/7900
+URL:http://act.yapc.eu/lpw2024/backup/talk/7900
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Habere Et Dispertire
+COMMENT:2 attendees
+DESCRIPTION:Damian Conway specified POD6 at the very beginning of the Perl 
+ 6 redesign process. Damian actively helped revise it to RakuDoc v2. Why bo
+ ther? Using an extensible tool that uses the AST of a RakuDoc source to re
+ nder it to HTML\, the talk is about richer documentation possibilities. Ma
+ ps\, Graphs\, Latex formulas\, specifying text in one place\, using it in 
+ others\, aliases\, automatic Table of contents\, tables embedding tables. 
+ How to create custom blocks.
+DTEND;TZID=Europe/London:20241026T104000
+DTSTART;TZID=Europe/London:20241026T102000
+LOCATION:The Library
+ORGANIZER:Richard Hainsworth
+SUMMARY:Using new RakuDoc v2
+UID:http://act.yapc.eu/lpw2024/backup/talk/7902
+URL:http://act.yapc.eu/lpw2024/backup/talk/7902
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Dave Cross
+ATTENDEE:Jay Vogt
+ATTENDEE:Tom Hukins
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Michael Woods
+ATTENDEE:yadu singh
+ATTENDEE:Ian Boddison
+ATTENDEE:John McCarthy
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+COMMENT:13 attendees
+DESCRIPTION:This presentation explores how you can make files generated fro
+ m Perl available to the user as a recently opened file
+DTEND;TZID=Europe/London:20241026T144000
+DTSTART;TZID=Europe/London:20241026T142000
+LOCATION:The Ballroom
+ORGANIZER:Max Maischein
+SUMMARY:Managing recent files from Perl
+UID:http://act.yapc.eu/lpw2024/backup/talk/7903
+URL:http://act.yapc.eu/lpw2024/backup/talk/7903
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Lee Johnson
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:Paul Evans
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:Robert Rothenberg
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Michael Woods
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:sujin seo
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Joel Vivian
+ATTENDEE:Boyd Duffee
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:26 attendees
+DESCRIPTION:It's been a a few years since my "Perl in 2025" talk. Lets take
+  a look at the results of the things I said we might do\, and consider the
+  next five years of possible future development.
+DTEND;TZID=Europe/London:20241026T101000
+DTSTART;TZID=Europe/London:20241026T093000
+LOCATION:The Ballroom
+ORGANIZER:Paul Evans
+SUMMARY:Perl in 2030
+UID:http://act.yapc.eu/lpw2024/backup/talk/7904
+URL:http://act.yapc.eu/lpw2024/backup/talk/7904
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Mohammad Anwar
+ATTENDEE:Tom Hukins
+ATTENDEE:Lee Johnson
+ATTENDEE:Ian Brierley
+ATTENDEE:Dave Cross
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Michael Woods
+ATTENDEE:Richard Pillar
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Joel Vivian
+ATTENDEE:Ian Boddison
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:24 attendees
+DESCRIPTION:Using Perl with Amazon's serverless Lambda and ECS products. Cu
+ rrent options for using AWS APIs from Perl for automation and integration.
+  Keeping the Ops people in DevOps happy.
+DTEND;TZID=Europe/London:20241026T104000
+DTSTART;TZID=Europe/London:20241026T102000
+LOCATION:The Ballroom
+ORGANIZER:Dave Lambley
+SUMMARY:Cloudy Perl\, how it looks now
+UID:http://act.yapc.eu/lpw2024/backup/talk/7907
+URL:http://act.yapc.eu/lpw2024/backup/talk/7907
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:David Cantrell
+ATTENDEE:Tom Hukins
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Sébastien Feugère
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Sаm Kington
+ATTENDEE:John Imrie
+ATTENDEE:AndyR
+COMMENT:13 attendees
+DESCRIPTION:Why I adopted Telegram::Bot\, what happened when I did\, and ho
+ w far the rabbit hole took me
+DTEND;TZID=Europe/London:20241026T120000
+DTSTART;TZID=Europe/London:20241026T114000
+LOCATION:The Ballroom
+ORGANIZER:James Green
+SUMMARY:I Adopted a Dist\, and This is What Happened
+UID:http://act.yapc.eu/lpw2024/backup/talk/7909
+URL:http://act.yapc.eu/lpw2024/backup/talk/7909
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Andrew Solomon
+ATTENDEE:Andrew Mehta
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Dave Cross
+ATTENDEE:Jay Vogt
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:John Imrie
+ATTENDEE:Michael Woods
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:21 attendees
+DESCRIPTION:For almost a decade I've provided companies with Perl training 
+ as part of their onboarding process.\n\nIn that time\, I've seen that ther
+ e are challenges to talent management of a Perl team\, so when I see a com
+ pany successful at this\, I try to capture the essence of how they approac
+ h it so that other companies don't need to learn it from scratch.\n\nThe c
+ ompany I'll be talking about is Logicly\, an Australian company which prov
+ ides services to government and corporate clients for data collection\, an
+ alysis and presentation.
+DTEND;TZID=Europe/London:20241026T161000
+DTSTART;TZID=Europe/London:20241026T153000
+LOCATION:The Ballroom
+ORGANIZER:Andrew Solomon
+SUMMARY:Perl Talent Management: How Logicly attracts\, develops\, and retai
+ ns their Perl developers.
+UID:http://act.yapc.eu/lpw2024/backup/talk/7910
+URL:http://act.yapc.eu/lpw2024/backup/talk/7910
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Dave Cross
+ATTENDEE:David Cantrell
+ATTENDEE:Andrew Solomon
+ATTENDEE:James Green
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Boyd Duffee
+ATTENDEE:yadu singh
+ATTENDEE:Ian Boddison
+ATTENDEE:Leon Brocard
+COMMENT:11 attendees
+DESCRIPTION:The backwards compatibility of Perl software is wonderful. That
+ ’s why it’s all the more jarring when you find a package that doesn’t work
+ . This is the story of a 15-year-old bug that I managed to track down and\
+ , fortunately\, resolve.
+DTEND;TZID=Europe/London:20241026T141000
+DTSTART;TZID=Europe/London:20241026T135000
+LOCATION:The Library
+ORGANIZER:Paul Cochrane
+SUMMARY:Fixing a fifteen-year-old curve fit bug
+UID:http://act.yapc.eu/lpw2024/backup/talk/7912
+URL:http://act.yapc.eu/lpw2024/backup/talk/7912
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Lee Johnson
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:Dave Cross
+ATTENDEE:David Cantrell
+ATTENDEE:Andrew Solomon
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Sébastien Feugère
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Sаm Kington
+ATTENDEE:Ian Boddison
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:17 attendees
+DESCRIPTION:EU is getting new Cybersecurity regulations!\n\nThese are mostl
+ y directed at manufacturers and critical infrastructure providers\, but si
+ nce Open Source ecosystems are upstream\, they will also affect anyone pub
+ lishing on CPAN.\n\nWhat are the implications? Who benefits\, and what nee
+ ds to be done to comply?\n\nIn this talk\, Salve J. Nilsen intends to shar
+ e his findings on the Cyber Resilience Act (CRA) and how it is likely to i
+ mpact us. He'll lay out the fundamentals of the law\, the different ways i
+ t is likely to shape the landscape\, and some ideas on how Open Source com
+ munities may not only survive – but even (with a little elbow-grease) thri
+ ve – going forward.\n\nSalve is one of the old farts in Oslo Perl Mongers.
+  He currently works at GlobalConnect (a Nordic telecom provider)\, but on 
+ his days off\, he spends time helping the CPAN Security Group prepare for 
+ the coming changes.
+DTEND;TZID=Europe/London:20241026T134000
+DTSTART;TZID=Europe/London:20241026T130000
+LOCATION:The Ballroom
+ORGANIZER:Salve J. Nilsen
+SUMMARY:Metadata\, CPAN\, FOSS Supply Chains\, and EU's Cyber Resilience Ac
+ t
+UID:http://act.yapc.eu/lpw2024/backup/talk/7915
+URL:http://act.yapc.eu/lpw2024/backup/talk/7915
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:James Green
+ATTENDEE:Jay Vogt
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Andrew Mehta
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:Olaf Alders
+ATTENDEE:Ed J
+ATTENDEE:Leo Lapworth
+ATTENDEE:Sawyer X
+ATTENDEE:Mickey Nasriachi
+ATTENDEE:Daniel Mita
+ATTENDEE:Thibault Duponchelle
+COMMENT:15 attendees
+DESCRIPTION:Pre Worksop Social: The Craft Beer Co. Covent Garden. Central L
+ ondon and easy access from multiple public transport lines. We have reserv
+ ed for 20 people.\n\nhttp://www.thecraftbeerco.com/covent-garden
+DTEND;TZID=Europe/London:20241025T223000
+DTSTART;TZID=Europe/London:20241025T183000
+LOCATION:Outside
+ORGANIZER:Lee Johnson
+SUMMARY:Pre Workshop Social
+UID:http://act.yapc.eu/lpw2024/backup/talk/7916
+URL:http://act.yapc.eu/lpw2024/backup/talk/7916
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:H.Merijn Brand
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Leon Timmermans
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Andrew Mehta
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:sujin seo
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Boyd Duffee
+ATTENDEE:Olaf Alders
+ATTENDEE:Ed J
+ATTENDEE:Mickey Nasriachi
+ATTENDEE:Leo Lapworth
+ATTENDEE:Sawyer X
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+ATTENDEE:Tom Hukins
+ATTENDEE:Mohammad Anwar
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:33 attendees
+DESCRIPTION:Post Worksop Social: The Eagle\, Hoxton. Approx 10min walk from
+  the venue. We have reserved for 25 people.\n\nhttps://www.theeaglehoxton.
+ co.uk
+DTEND;TZID=Europe/London:20241026T223000
+DTSTART;TZID=Europe/London:20241026T183000
+LOCATION:Outside
+ORGANIZER:Lee Johnson
+SUMMARY:Post Workshop Social
+UID:http://act.yapc.eu/lpw2024/backup/talk/7917
+URL:http://act.yapc.eu/lpw2024/backup/talk/7917
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Dave Cross
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Leon Brocard
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:14 attendees
+DESCRIPTION:Stuart is the President of The Perl and Raku Foundation (TPRF) 
+ and will be giving a short presentation about the foundation and it's acti
+ vities.\n\nThis will be followed by an open discussion session where the a
+ udience can participate with questions and comments.\n\nIf you would like 
+ to ask a question ion advance\, please drop me an email stuart@perlfoundat
+ ion.org or find me on TPRF Slack https://perlfoundation.slack.com/.
+DTEND;TZID=Europe/London:20241026T113000
+DTSTART;TZID=Europe/London:20241026T105000
+LOCATION:The Ballroom
+ORGANIZER:Stuart Mackintosh
+SUMMARY:TPRF Presentation and discussion
+UID:http://act.yapc.eu/lpw2024/backup/talk/7918
+URL:http://act.yapc.eu/lpw2024/backup/talk/7918
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Leon Brocard
+ATTENDEE:AndyR
+ATTENDEE:Jess Robinson
+COMMENT:3 attendees
+DESCRIPTION:Binary Data visualisation normally requires modules with powerf
+ ul external dependencies.  But sometimes you need something quick bloat fr
+ ee\, and exploit Perls powerful handling of binary data.  Sometimes you ma
+ y just need to "see" this binary data.  Sometimes the Visual yield is actu
+ ally the goal of your project.   This simple single function to display a 
+ window in a large array of bit vectors\, can open up opportunities of fast
+  binary data manipulation with concurrent representation on a terminal win
+ dow.  Examples of how this may useful both for fun and study are provided.
+ 
+DTEND;TZID=Europe/London:20241026T161000
+DTSTART;TZID=Europe/London:20241026T160000
+LOCATION:The Library
+ORGANIZER:Saif Ahmed
+SUMMARY:Bit Vector Arrays to Pixels in a Terminal with One Subroutine
+UID:http://act.yapc.eu/lpw2024/backup/talk/7920
+URL:http://act.yapc.eu/lpw2024/backup/talk/7920
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Leon Timmermans
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Dave Cross
+ATTENDEE:Jay Vogt
+ATTENDEE:Tom Hukins
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Michael Woods
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Ian Boddison
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Joel Vivian
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:24 attendees
+DESCRIPTION:A light-hearted but still serious talk (with copious examples) 
+ on why people’s names are a problem\, and representing them in software is
+  not as easy as you think it is\, even after you’ve thought about it.
+DTEND;TZID=Europe/London:20241026T151000
+DTSTART;TZID=Europe/London:20241026T145000
+LOCATION:The Ballroom
+ORGANIZER:Mike Whitaker
+SUMMARY:Names are hard
+UID:http://act.yapc.eu/lpw2024/backup/talk/7921
+URL:http://act.yapc.eu/lpw2024/backup/talk/7921
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Ian Brierley
+ATTENDEE:Boyd Duffee
+ATTENDEE:Leon Brocard
+COMMENT:3 attendees
+DESCRIPTION:The recent upsurge in functional programming techniques for web
+  development has been lead by new languages such as Elm (which compiles to
+  JS) and serves a need to simplify front end design to help improve collab
+ oration and streamline maintenance. This talk will present the new Raku HT
+ ML::Functional module (written by the presenter)\, show how it follows the
+  functional approach of Elmlang but is more suited for backend server side
+  page assembly. A practical example of functional HTML in action will be d
+ emonstrated that uses HTMX\, Pico CSS and Raku Cro on the server side.
+DTEND;TZID=Europe/London:20241026T120000
+DTSTART;TZID=Europe/London:20241026T114000
+LOCATION:The Study
+ORGANIZER:Steve Roe
+SUMMARY:Raku HTML::Functional
+UID:http://act.yapc.eu/lpw2024/backup/talk/7923
+URL:http://act.yapc.eu/lpw2024/backup/talk/7923
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Boyd Duffee
+ATTENDEE:Thibault Duponchelle
+COMMENT:2 attendees
+DESCRIPTION:Massification of higher education results in large class size i
+ n learning and teaching environment\, and another fact is that\, in engine
+ ering education\, there are a number of modules that are taught by simulat
+ ion\, and report submission is done by uploading a pdf/doc file to online 
+ system. It is therefore challenging to reduce the academic misconducts in 
+ university.  \n\nInspired by the idea of test automation in Perl/Raku\, a 
+ study on coursework question design is conducted by randomizing the parame
+ ters in coursework questions. The method combines tools in GNU/Linux\, suc
+ h as Perl/Raku\, GNU/Octave\, LaTex\, pdfunite\, and etc\, and it can prod
+ uce exam paper and exam solution at the same time. The automation in marki
+ ng process is also investigated based on the result of question design aut
+ omation.
+DTEND;TZID=Europe/London:20241026T151000
+DTSTART;TZID=Europe/London:20241026T145000
+LOCATION:The Library
+ORGANIZER:Yujia Zhai
+SUMMARY:Perl/Raku Based Coursework Design for Engineering Education
+UID:http://act.yapc.eu/lpw2024/backup/talk/7924
+URL:http://act.yapc.eu/lpw2024/backup/talk/7924
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Iain Campbell
+ATTENDEE:José Joaquín Atria
+COMMENT:6 attendees
+DESCRIPTION:Let's meet up for an open conversation about the Perl and Raku 
+ communities' security posture!\n\nTopics we can discuss: The security of m
+ odules\, tooling\, community infrastructure and the greater Open Source su
+ pply-chain in general\, and the roles we play in this landscape.\n\nRememb
+ er – security is everyone's business\, because everyone is affected by it!
+ 
+DTEND;TZID=Europe/London:20241026T151000
+DTSTART;TZID=Europe/London:20241026T135000
+LOCATION:The Study
+ORGANIZER:Salve J. Nilsen
+SUMMARY:CPAN Security BoF
+UID:http://act.yapc.eu/lpw2024/backup/talk/7925
+URL:http://act.yapc.eu/lpw2024/backup/talk/7925
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Jay Vogt
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+COMMENT:15 attendees
+DESCRIPTION:Lunch!
+DTEND;TZID=Europe/London:20241026T130000
+DTSTART;TZID=Europe/London:20241026T120000
+LOCATION:Outside
+ORGANIZER:Lee Johnson
+SUMMARY:Lunch
+UID:http://act.yapc.eu/lpw2024/backup/talk/7927
+URL:http://act.yapc.eu/lpw2024/backup/talk/7927
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Andrew Solomon
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:sujin seo
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Robert Acock
+COMMENT:12 attendees
+DESCRIPTION:Registration
+DTEND;TZID=Europe/London:20241026T120000
+DTSTART;TZID=Europe/London:20241026T090000
+LOCATION:Reception Room
+ORGANIZER:Lee Johnson
+SUMMARY:Registration
+UID:http://act.yapc.eu/lpw2024/backup/talk/7928
+URL:http://act.yapc.eu/lpw2024/backup/talk/7928
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:H.Merijn Brand
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:Boyd Duffee
+ATTENDEE:Ian Boddison
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:Thibault Duponchelle
+COMMENT:20 attendees
+DESCRIPTION:Some information on the workshop and such
+DTEND;TZID=Europe/London:20241026T092500
+DTSTART;TZID=Europe/London:20241026T092000
+LOCATION:The Ballroom
+ORGANIZER:Julien Fiegehenn
+SUMMARY:Hello & Welcome [Back]
+UID:http://act.yapc.eu/lpw2024/backup/talk/7929
+URL:http://act.yapc.eu/lpw2024/backup/talk/7929
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Iain Campbell
+ATTENDEE:John Imrie
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+COMMENT:10 attendees
+DESCRIPTION:Snack break...
+DTEND;TZID=Europe/London:20241026T153000
+DTSTART;TZID=Europe/London:20241026T151000
+LOCATION:Reception Room
+ORGANIZER:Lee Johnson
+SUMMARY:Snack Break
+UID:http://act.yapc.eu/lpw2024/backup/talk/7930
+URL:http://act.yapc.eu/lpw2024/backup/talk/7930
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:Paul Evans
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Dave Cross
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Tom Hukins
+ATTENDEE:Andrew Solomon
+ATTENDEE:Habere Et Dispertire
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Robert Rothenberg
+ATTENDEE:José Joaquín Atria
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Boyd Duffee
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Joel Vivian
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:Graham Barr
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:30 attendees
+DESCRIPTION:Bite sized talks. Max 5min a piece. Including (but possibly not
+  limited to):\n\n‎* Deriv | 25 Years‎\n‎* Perl School Catch-up‎\n‎* User P
+ ass Data Manager‎\n‎* This Is A Camel‎\n‎* App::sdview - a structured docu
+ ment viewer‎\n‎* State of DBI‎\n‎* Perl Weather Forecast\n‎* Queen Tea Par
+ ty ~ a cup of rationality‎\n* ‎Replacing Cron with Home Assistant and Perl
+ ‎
+DTEND;TZID=Europe/London:20241026T171000
+DTSTART;TZID=Europe/London:20241026T162000
+LOCATION:The Ballroom
+ORGANIZER:Lee Johnson
+SUMMARY:Lightning Talks
+UID:http://act.yapc.eu/lpw2024/backup/talk/7931
+URL:http://act.yapc.eu/lpw2024/backup/talk/7931
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Jay Vogt
+ATTENDEE:Richard Pillar
+COMMENT:2 attendees
+DESCRIPTION:The study can hold 15 people seating with room for a presenter.
+  We can host a breakout\, BOF\, hackspace\, whatever you suggest.
+DTEND;TZID=Europe/London:20241026T113000
+DTSTART;TZID=Europe/London:20241026T093000
+LOCATION:The Study
+ORGANIZER:Lee Johnson
+SUMMARY:Open Session
+UID:http://act.yapc.eu/lpw2024/backup/talk/7932
+URL:http://act.yapc.eu/lpw2024/backup/talk/7932
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Lee Johnson
+ATTENDEE:Salve J. Nilsen
+ATTENDEE:Ian Brierley
+ATTENDEE:Gianni Ceccarelli
+ATTENDEE:H.Merijn Brand
+ATTENDEE:Dave Cross
+ATTENDEE:David Cantrell
+ATTENDEE:Jay Vogt
+ATTENDEE:Tom Hukins
+ATTENDEE:Andrew Solomon
+ATTENDEE:Chris Carline
+ATTENDEE:James Green
+ATTENDEE:Andrew Mehta
+ATTENDEE:Robert Rothenberg
+ATTENDEE:Sébastien Feugère
+ATTENDEE:Boyd Duffee
+ATTENDEE:Michael Woods
+ATTENDEE:Richard Pillar
+ATTENDEE:yadu singh
+ATTENDEE:Iain Campbell
+ATTENDEE:Dimitrios Kechagias
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:Leon Brocard
+ATTENDEE:John Imrie
+ATTENDEE:Toby Inkster
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:28 attendees
+DESCRIPTION:I'd like to talk about what it took to organise this year's LPW
+ . What it takes to organise one\, in general\, and think about the future 
+ of the event.
+DTEND;TZID=Europe/London:20241026T174000
+DTSTART;TZID=Europe/London:20241026T172000
+LOCATION:The Ballroom
+ORGANIZER:Lee Johnson
+SUMMARY:Thanks & The Future of LPW
+UID:http://act.yapc.eu/lpw2024/backup/talk/7935
+URL:http://act.yapc.eu/lpw2024/backup/talk/7935
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Andrew Solomon
+ATTENDEE:Boyd Duffee
+COMMENT:2 attendees
+DESCRIPTION:Chemometrics with Perl & Pharmaceutical Applications\n\nAndrew 
+ J. O’Neil PhD\nDirector\, Nirmetrix Limited\, 20-22 Wenlock Road\, London\
+ , N1 7GU\, U.K.\n\nThe extensive functionality of the Perl language and it
+ s clear\, C-like syntax make it a good choice for scientific data analysis
+  and also for development of software with a graphical user interface (GUI
+ ).\n\nThis work demonstrates the use of Perl in analytical\nchemistry\, sp
+ ecifically near infrared (NIR) spectroscopy\, a non-destructive\, non-inva
+ sive\, rapid method of chemical analysis. \nExample applications of Perl f
+ or pharmaceutical\nanalysis are reported.\n\nA portable\, handheld NIR spe
+ ctrometer (model NIR-S-G1\,\nInnoSpectra Corporation) is controlled by a G
+ UI written in\nPerl/Tk. Resulting spectra are simultaneously interpreted w
+ ith results reported instantaneously to the end-user.\n\nNIR absorptions a
+ rise due to overtone vibrations of chemical bonds that are approximate\nmu
+ ltiples of the fundamental mid-infrared absorption frequencies (i.e. first
+ \, second and\nthird overtones) or are combination bands of several fundam
+ ental vibrations’ frequencies.\nReduction in reflected incident light inte
+ nsity by a material at a given wavelength\, relative\nto that from a non-a
+ bsorbing\, diffusely-reflecting standard (e.g. sintered PTFE) occurs due\n
+ to absorption by one or more covalent bonds of the material studied. Bonds
+  that absorb in\nthis region of the electromagnetic spectrum generally inv
+ olve hydrogen covalently bonded\nto either: carbon\, oxygen or nitrogen. M
+ ost organic molecules\, including pharmaceutical\nactive ingredients\, thu
+ s show absorptions in this region.\n\nAn NIR spectrum of a chemical-sample
+  is a multivariate data array of N-reflected\nintensities of light at disc
+ rete wavelengths (i.e. 1-by-N) across the wavelength range\n(approximately
+ : 900 – 1\,700 nm). With many variables (wavelengths) in a spectrum\n(betw
+ een one and several hundreds of wavelengths)\, interpretation of a spectru
+ m or a\ncollection of spectra requires multivariate analysis (termed chemo
+ metrics).\n\nThis work illustrates the use of Perl twofold. The first appl
+ ication is for control of the open-\nsource scientific computing programmi
+ ng language GNU Octave\, to generate multiple NIR\ndata calibration models
+  for quantification of analyte (i.e. pharmaceutical active ingredient).\nT
+ hese multivariate-regression models are produced by calibration of NIR dat
+ a with\nreference analytical method concentration data\, using the partial
+  least squares regression\n(PLSR) algorithm. Various mathematical data pre
+ treatments are applied to the NIR spectra\nand\, in combination\, subsets 
+ of wavelength regions are also utilised in the data modelling.\nThe combin
+ ed effects of these on the accuracy and precision of calibration is determ
+ ined.\nThe aim of this data modelling is to select a model with high accur
+ acy and precision.\nThe second application of Perl is for control of the N
+ IR spectrometer. A Perl/Tk developed\nGUI is used to control the handheld 
+ NIR spectrometer\, enabling acquisition of: background spectra of the refe
+ rence reflectance standard (for instrument response calibration) and\nthen
+  of spectra of chemical samples. The GUI enables interpretation of the acq
+ uired\nspectrum on-the-fly\, for a qualitative (i.e. identification) or qu
+ antitative chemometric model.\nPerl scripts load ASCII text arrays – previ
+ ously developed\, optimised GNU Octave\nchemometric model and chemical-sam
+ ple spectrum – and perform multivariate analysis.\nThe GUI then reports to
+  the end-user the required metric for either identification (along\nwith a
+  pass/fail result) or analyte quantification. This therefore obviates the 
+ need for the\nend-user to perform chemometrics.\nThe presentation will inc
+ lude illustration of the use of Perl for NIR analysis of pharmaceuticals a
+ nd for several applications.
+DTEND;TZID=Europe/London:20241026T132000
+DTSTART;TZID=Europe/London:20241026T130000
+LOCATION:The Study
+ORGANIZER:Andrew O'Neil
+SUMMARY:Chemometrics with Perl & Pharmaceutical Applications
+UID:http://act.yapc.eu/lpw2024/backup/talk/7936
+URL:http://act.yapc.eu/lpw2024/backup/talk/7936
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Ian Boddison
+ATTENDEE:John McCarthy
+ATTENDEE:Sаm Kington
+ATTENDEE:John Imrie
+ATTENDEE:Michael Woods
+ATTENDEE:Toby Inkster
+ATTENDEE:AndyR
+COMMENT:7 attendees
+DESCRIPTION:Many are still composing their SQL queries dangerously by assem
+ bling their queries with string interpolation.\n\nNot only are such querie
+ s slow and prone to errors\, they are also loopholes for injections.\n\nBu
+ t many legacy projects are full of such examples. And refactoring is often
+  not easy.\n\nAnd even today many developers choose interpolation\, since 
+ it’s a core feature in Perl and comfortable to use.\n\nThis talk shows a c
+ urrent project to convert such interpolations to placeholders\, without lo
+ sing the benefits of ease and expressiveness.\n\nWe will cover and explain
+  some in-depth techniques like\n\n- Callbacks in DBI.pm\n- Manipulating va
+ riables with PadWalker.pm\n- Bind variables with tie\n- Overloading operat
+ ors for objects\n\nThis is an extended and updated version of my talk at Y
+ APC::Europe & KohaCon’23 in Helsinki (https://perlkohacon.fi/Schedule.html
+ #?talk_id=31)
+DTEND;TZID=Europe/London:20241026T113000
+DTSTART;TZID=Europe/London:20241026T105000
+LOCATION:The Library
+ORGANIZER:Rolf Langsdorf
+SUMMARY:Hold My Place - Automating SQL placeholders by de-interpolating str
+ ings
+UID:http://act.yapc.eu/lpw2024/backup/talk/7937
+URL:http://act.yapc.eu/lpw2024/backup/talk/7937
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Jay Vogt
+ATTENDEE:Boyd Duffee
+ATTENDEE:AndyR
+COMMENT:3 attendees
+DESCRIPTION:A session of science themed talks\, which will likely take the 
+ form:\n\n- 4x lightning talks (30min)\n- 1x 40min talk\n- 1x 20min talk\n\
+ nMore details to be confirmed.
+DTEND;TZID=Europe/London:20241026T171000
+DTSTART;TZID=Europe/London:20241026T153000
+LOCATION:The Study
+ORGANIZER:Andrew O'Neil
+SUMMARY:Science Perl Talks
+UID:http://act.yapc.eu/lpw2024/backup/talk/7939
+URL:http://act.yapc.eu/lpw2024/backup/talk/7939
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:Ian Boddison
+ATTENDEE:Leon Brocard
+COMMENT:2 attendees
+DESCRIPTION:A brief introduction to modules to easily access AI from Perl.\
+ n\nThis is not about using AI to help with coding.\n\nWe'll dive into how 
+ we can add new functionality to enhance existing systems using the power o
+ f AI.  Make your users' experience better and do some heavy lifting for th
+ em.
+DTEND;TZID=Europe/London:20241026T155000
+DTSTART;TZID=Europe/London:20241026T153000
+LOCATION:The Library
+ORGANIZER:Ian Boddison
+SUMMARY:Perl\, AI and Your System
+UID:http://act.yapc.eu/lpw2024/backup/talk/7941
+URL:http://act.yapc.eu/lpw2024/backup/talk/7941
+END:VEVENT
+BEGIN:VEVENT
+ATTENDEE:AndyR
+ATTENDEE:Thibault Duponchelle
+COMMENT:2 attendees
+DESCRIPTION:Do you remember Equifax? How did someone manage to steal the da
+ ta of almost 200 million users? Well\, Equifax simply fell victim to a vul
+ nerability on a framework\, Struts: nothing wrong with the code that the d
+ evelopers wrote. No social skills needed for that hack\, just some code. \
+ n\nAfter a clear introduction to the problems related to frameworks and li
+ braries\, with a couple of other illustrious examples\, we will take a loo
+ k at possible prevention strategies. We will also ask for you help to crea
+ te the first completely free IDE integration\, assuming you guys are using
+  an IDE :)
+DTEND;TZID=Europe/London:20241026T144000
+DTSTART;TZID=Europe/London:20241026T142000
+LOCATION:The Library
+ORGANIZER:Nana Insaidoo
+SUMMARY:opensource vulnerabilities and where to find them
+UID:http://act.yapc.eu/lpw2024/backup/talk/7942
+URL:http://act.yapc.eu/lpw2024/backup/talk/7942
+END:VEVENT
+END:VCALENDAR
