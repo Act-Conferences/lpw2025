@@ -10,7 +10,7 @@
   "endDate": "2025-11-29T18:00",
   "location": {
     "@type": "Place",
-    "name": "International Student House",
+    "name": "International Students House",
     "sameAs": "https://www.ishvenues.uk/",
     "address": {
       "@type": "PostalAddress",
