@@ -3,20 +3,20 @@
 {
   "@context": "http://www.schema.org",
   "@type": "Event",
-  "name": "London Perl & Raku Workshop, 2024",
+  "name": "London Perl & Raku Workshop, 2025",
   "url": "[% global.config.general_full_uri %]",
   "description": "London Perl & Raku Workshop. Perl & Raku Conference and training in London.",
-  "startDate": "2024-10-19T09:30",
-  "endDate": "2024-10-19T18:00",
+  "startDate": "2025-11-29T09:30",
+  "endDate": "2025-11-29T18:00",
   "location": {
     "@type": "Place",
-    "name": "David Game College",
-    "sameAs": "https://www.davidgamecollege.com/",
+    "name": "International Student House",
+    "sameAs": "https://www.ishvenues.uk/",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "31 Jewry Street",
+      "streetAddress": "229 Great Portland Street",
       "addressLocality": "London",
-      "postalCode": "EC3N 2ET",
+      "postalCode": "W1W 5PN",
       "addressCountry": "United Kingdom"
     }
   },
