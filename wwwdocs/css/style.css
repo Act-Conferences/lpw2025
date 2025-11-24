@@ -1,18 +1,3 @@
-/*~------------------------------------------------------------------*/
-/* Responsive Sponsor logo classes                                   */
-/*~------------------------------------------------------------------*/
-
-@media only screen and (max-width: 501px) {
-    img.logo500{
-        width:100% !important;
-    }
-}
-
-@media only screen and (max-width: 151px) {
-    img.logo150{
-        width:100% !important;
-    }
-}
 
 html,body {
     height:100%;
